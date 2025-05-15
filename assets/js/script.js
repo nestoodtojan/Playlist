@@ -34,15 +34,7 @@ const musicData = [
     artist: "Paramore",
     musicPath: "./assets/music/music-3.mp3",
   },
-  {
-    backgroundImage: "./assets/images/poster-4.jpg",
-    posterUrl: "./assets/images/poster-4.jpg",
-    title: "Pantropiko",
-    album: "Bini ph",
-    year: 2024,
-    artist: "Bini",
-    musicPath: "./assets/music/music-4.mp3",
-  },
+
   {
     backgroundImage: "./assets/images/poster-5.jpg",
     posterUrl: "./assets/images/poster-5.jpg",
@@ -64,10 +56,10 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-7.jpg",
     posterUrl: "./assets/images/poster-7.jpg",
-    title: "Sining",
-    album: "EMI Records Philippines",
-    year: 2024,
-    artist: "Dionela",
+    title: "Isa Lang",
+    album: "Viva Record",
+    year: 2021,
+    artist: "Arthur Nery",
     musicPath: "./assets/music/music-7.mp3",
   },
   {
@@ -79,12 +71,21 @@ const musicData = [
   artist: "Billie Eilish",
   musicPath: "./assets/music/music-8.mp3",
   },
+  {
+  backgroundImage: "./assets/images/poster-9.jpg",
+  posterUrl: "./assets/images/poster-9.jpg",
+  title: "Multo",
+  album: "2025 Viva Music Inc.",
+  year: 2025,
+  artist: "Cup of Joe",
+  musicPath: "./assets/music/music-9.mp3",
+  },
 ];
 
 
 
 /**
- * add eventListnere on all elements that are passed
+ * add eventListnere on all elements that are passeds
  */
 
 const addEventOnElements = function (elements, eventType, callback) {
@@ -304,6 +305,8 @@ const isMusicEnd = function () {
     playerRunningTime.textContent = getTimecode(audioSource.currentTime);
     updateRangeFill();
   }
+  audioSource.addEventListener("ended", skipNext);
+
 }
 
 
@@ -435,3 +438,6 @@ const muteVolume = function () {
 }
 
 playerVolumeBtn.addEventListener("click", muteVolume);
+
+
+
