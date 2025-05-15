@@ -56,10 +56,10 @@ const musicData = [
   {
     backgroundImage: "./assets/images/poster-7.jpg",
     posterUrl: "./assets/images/poster-7.jpg",
-    title: "Isa Lang",
+    title: "Sining",
     album: "Viva Record",
     year: 2021,
-    artist: "Arthur Nery",
+    artist: "Dionela",
     musicPath: "./assets/music/music-7.mp3",
   },
   {
