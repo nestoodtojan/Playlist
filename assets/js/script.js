@@ -80,6 +80,15 @@ const musicData = [
   artist: "Cup of Joe",
   musicPath: "./assets/music/music-9.mp3",
   },
+   {
+  backgroundImage: "./assets/images/poster-10.jpg",
+  posterUrl: "./assets/images/poster-10.jpg",
+  title: "Residuals",
+  album: "11:11 Deluxe.",
+  year: 2025,
+  artist: "Chris Brown",
+  musicPath: "./assets/music/music-10.mp3",
+  },
 ];
 
 
